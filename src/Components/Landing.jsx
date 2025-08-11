@@ -9,7 +9,7 @@ export default function Landing() {
                     {/* Logo */}
                     <div className="flex-shrink-0">
                         <img
-                            src="public/images/logoVerona.jpg"
+                            src="/images/logoVerona.jpg"
                             alt="Verona"
                             className="h-16 md:h-20"
                         />
@@ -27,7 +27,7 @@ export default function Landing() {
                         <button className="hover:text-pink-500">Log In</button>
                         <button className="hover:text-pink-500">Search</button>
                         <img
-                            src="public/images/cart.png"
+                            src="/images/cart.png"
                             alt="cart"
                             className="w-8 md:w-10"
                         />
@@ -52,7 +52,7 @@ export default function Landing() {
                     </button>
                 </div>
                 <img
-                    src="public/images/top-view-gold-chains-still-life.jpg"
+                    src="/images/top-view-gold-chains-still-life.jpg"
                     alt="gold chains"
                     className="w-full max-w-md md:max-w-lg rounded-xl shadow-lg"
                 />
@@ -71,7 +71,7 @@ export default function Landing() {
             {/* Shipping */}
             <div className="flex flex-col md:flex-row justify-center items-center mt-20 space-y-6 md:space-y-0 md:space-x-10 px-6">
                 <img
-                    src="public/images/display-shiny-elegant-gold-chain.jpg"
+                    src="/images/display-shiny-elegant-gold-chain.jpg"
                     alt="gold chains"
                     className="w-full max-w-md md:max-w-lg rounded-xl shadow-lg"
                 />
