@@ -1,41 +1,12 @@
 import { FaInstagram, FaTiktok } from "react-icons/fa";
+import { Link } from "react-router";
+import Header from "./Header";
 
 export default function Landing() {
     return (
         <>
-            {/* Header */}
-            <div className="w-full py-4 px-6 border-b border-gray-200">
-                <div className="container mx-auto flex flex-wrap items-center justify-between">
-                    {/* Logo */}
-                    <div className="flex-shrink-0">
-                        <img
-                            src="/images/logoVerona.jpg"
-                            alt="Verona"
-                            className="h-16 md:h-20"
-                        />
-                    </div>
-
-                    {/* Navigation */}
-                    <div className="w-full md:w-auto mt-4 md:mt-0 flex justify-center md:justify-center space-x-4 md:space-x-6">
-                        <button className="hover:text-pink-500">HOME</button>
-                        <button className="hover:text-pink-500">PRODUCTS</button>
-                        <button className="hover:text-pink-500">CONTACT</button>
-                    </div>
-
-                    {/* Right Icons */}
-                    <div className="flex items-center space-x-3 md:space-x-4 mt-4 md:mt-0">
-                        <button className="hover:text-pink-500">Log In</button>
-                        <button className="hover:text-pink-500">Search</button>
-                        <img
-                            src="/images/cart.png"
-                            alt="cart"
-                            className="w-8 md:w-10"
-                        />
-                    </div>
-                </div>
-            </div>
-
-            {/* Hero Section */}
+            <Header showHome={true} showProducts={true} showContact={true} /> 
+            
             <div className="flex flex-col md:flex-row justify-center items-center mt-12 md:space-x-20 px-6">
                 <div className="text-center md:text-left mb-6 md:mb-0">
                     <h1 className="text-3xl md:text-5xl font-bold leading-snug">
@@ -48,7 +19,7 @@ export default function Landing() {
                         hover:bg-pink-700 hover:scale-105 hover:shadow-lg 
                         transition-all duration-300 ease-in-out"
                     >
-                        Shop Now
+                        <Link to={'/products'}>Shop Now</Link>
                     </button>
                 </div>
                 <img
@@ -58,7 +29,7 @@ export default function Landing() {
                 />
             </div>
 
-            {/* Mission */}
+            
             <div className="flex justify-center mt-20 flex-col items-center text-center px-6">
                 <h1 className="font-serif text-2xl md:text-3xl mb-4 text-pink-500">OUR MISSION</h1>
                 <p className="max-w-3xl text-lg md:text-xl font-semibold leading-relaxed text-gray-700">
@@ -68,7 +39,7 @@ export default function Landing() {
                 </p>
             </div>
 
-            {/* Shipping */}
+           
             <div className="flex flex-col md:flex-row justify-center items-center mt-20 space-y-6 md:space-y-0 md:space-x-10 px-6">
                 <img
                     src="/images/display-shiny-elegant-gold-chain.jpg"
@@ -86,7 +57,7 @@ export default function Landing() {
                 </div>
             </div>
 
-            {/* Footer */}
+          
             <footer className="bg-gray-900 text-white mt-20 py-6">
                 <div className="container mx-auto flex flex-col md:flex-row items-center justify-between px-6 space-y-4 md:space-y-0">
                     {/* Store Name */}
@@ -94,7 +65,7 @@ export default function Landing() {
                         VERONA
                     </h2>
 
-                    {/* Social Media */}
+                  
                     <div className="flex space-x-6">
                         <a
                             href="https://www.instagram.com/verona_accessoriess?igsh=MXRndGR0YzF2M2IzaQ=="
