@@ -2,6 +2,7 @@ import { FaInstagram, FaTiktok } from "react-icons/fa";
 import { Link } from "react-router";
 import Header from "./Header";
 
+
 export default function Landing() {
     return (
         <>
